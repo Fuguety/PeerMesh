@@ -384,25 +384,28 @@ public class Main
 
 
 
-    private static void printHelp()
-    {
-        ConsolePrinter.line("Commands:");
-        ConsolePrinter.line("  send <username> <message>");
-        ConsolePrinter.line("  search <username>");
-        ConsolePrinter.line("  search all");
-        ConsolePrinter.line("  benchmark <username> [count]");
-        ConsolePrinter.line("  heartbeat [status|on [5-99]|off|every <5-99>]");
-        ConsolePrinter.line("  whoami/who am I");
-        ConsolePrinter.line("  peers");
-        ConsolePrinter.line("  dns");
-        ConsolePrinter.line("  clear / cls");
-        ConsolePrinter.line("  help");
-        ConsolePrinter.line("  exit");
-        ConsolePrinter.line("Optional:");
-        ConsolePrinter.line("  register <username> <host> <port>");
-        ConsolePrinter.line("  resolve <username>");
-        ConsolePrinter.line("  connect <username>");
-    }
+        private static void printHelp() 
+        {
+            String help =
+                "Commands:\n" +
+                "  send <username> <message>\n" +
+                "  search <username>\n" +
+                "  search all\n" +
+                "  benchmark <username> [count]\n" +
+                "  heartbeat [status|on [5-99]|off|every <5-99>]\n" +
+                "  whoami/who am I\n" +
+                "  peers\n" +
+                "  dns\n" +
+                "  clear / cls\n" +
+                "  help\n" +
+                "  exit\n" +
+                "Optional:\n" +
+                "  register <username> <host> <port>\n" +
+                "  resolve <username>\n" +
+                "  connect <username>";
+
+            ConsolePrinter.line(help);
+        }
 
 
 
